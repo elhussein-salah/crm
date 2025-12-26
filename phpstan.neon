@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+
+    paths:
+        - app
+        - src
+
+    excludePaths:
+        - vendor
+        - storage
+        - bootstrap/cache
+
+    universalObjectCratesClasses:
+        - Illuminate\Http\Resources\Json\JsonResource
